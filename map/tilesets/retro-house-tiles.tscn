@@ -1,0 +1,1790 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://map/tilesets/retro_house.png" type="Texture" id=1]
+
+[node name="root" type="Node2D" index="0"]
+
+[node name="wall_shadow" type="Sprite" parent="." index="0"]
+
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+region_enabled = true
+region_rect = Rect2( 0, 0, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="wall_shadow" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall_shadow/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="wall_flat" type="Sprite" parent="." index="1"]
+
+position = Vector2( 16, 0 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 1
+region_enabled = true
+region_rect = Rect2( 16, 0, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="wall_flat" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall_flat/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="wall_shadow2" type="Sprite" parent="." index="2"]
+
+position = Vector2( 32, 0 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 2
+region_enabled = true
+region_rect = Rect2( 32, 0, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="wall_shadow2" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall_shadow2/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="wall_flat_dark" type="Sprite" parent="." index="3"]
+
+position = Vector2( 48, 0 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 3
+region_enabled = true
+region_rect = Rect2( 48, 0, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="wall_flat_dark" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall_flat_dark/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="retro_house4" type="Sprite" parent="." index="4"]
+
+position = Vector2( 64, 0 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 4
+region_enabled = true
+region_rect = Rect2( 64, 0, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="retro_house4" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="retro_house4/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="retro_house5" type="Sprite" parent="." index="5"]
+
+position = Vector2( 80, 0 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 5
+region_enabled = true
+region_rect = Rect2( 80, 0, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="retro_house5" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="retro_house5/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="retro_house6" type="Sprite" parent="." index="6"]
+
+position = Vector2( 96, 0 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 6
+region_enabled = true
+region_rect = Rect2( 96, 0, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="retro_house6" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="retro_house6/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="retro_house7" type="Sprite" parent="." index="7"]
+
+position = Vector2( 112, 0 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 7
+region_enabled = true
+region_rect = Rect2( 112, 0, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="retro_house7" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="retro_house7/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="retro_house8" type="Sprite" parent="." index="8"]
+
+position = Vector2( 0, 16 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 8
+region_enabled = true
+region_rect = Rect2( 0, 16, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="retro_house8" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="retro_house8/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="red_carpet" type="Sprite" parent="." index="9"]
+
+position = Vector2( 16, 16 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 9
+region_enabled = true
+region_rect = Rect2( 16, 16, 16, 16 )
+
+[node name="sand" type="Sprite" parent="." index="10"]
+
+position = Vector2( 32, 16 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 10
+region_enabled = true
+region_rect = Rect2( 32, 16, 16, 16 )
+
+[node name="grass" type="Sprite" parent="." index="11"]
+
+position = Vector2( 48, 16 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 11
+region_enabled = true
+region_rect = Rect2( 48, 16, 16, 16 )
+
+[node name="grass2" type="Sprite" parent="." index="12"]
+
+position = Vector2( 64, 16 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 12
+region_enabled = true
+region_rect = Rect2( 64, 16, 16, 16 )
+
+[node name="retro_house13" type="Sprite" parent="." index="13"]
+
+position = Vector2( 80, 16 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 13
+region_enabled = true
+region_rect = Rect2( 80, 16, 16, 16 )
+
+[node name="retro_house14" type="Sprite" parent="." index="14"]
+
+position = Vector2( 96, 16 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 14
+region_enabled = true
+region_rect = Rect2( 96, 16, 16, 16 )
+
+[node name="retro_house15" type="Sprite" parent="." index="15"]
+
+position = Vector2( 112, 16 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 15
+region_enabled = true
+region_rect = Rect2( 112, 16, 16, 16 )
+
+[node name="wood_floor" type="Sprite" parent="." index="16"]
+
+position = Vector2( 0, 32 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 16
+region_enabled = true
+region_rect = Rect2( 0, 32, 16, 16 )
+
+[node name="red_gold_carpet" type="Sprite" parent="." index="17"]
+
+position = Vector2( 16, 32 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 17
+region_enabled = true
+region_rect = Rect2( 16, 32, 16, 16 )
+
+[node name="retro_house18" type="Sprite" parent="." index="18"]
+
+position = Vector2( 32, 32 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 18
+region_enabled = true
+region_rect = Rect2( 32, 32, 16, 16 )
+
+[node name="retro_house19" type="Sprite" parent="." index="19"]
+
+position = Vector2( 48, 32 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 19
+region_enabled = true
+region_rect = Rect2( 48, 32, 16, 16 )
+
+[node name="retro_house20" type="Sprite" parent="." index="20"]
+
+position = Vector2( 64, 32 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 20
+region_enabled = true
+region_rect = Rect2( 64, 32, 16, 16 )
+
+[node name="waterfall" type="Sprite" parent="." index="21"]
+
+position = Vector2( 80, 32 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 21
+region_enabled = true
+region_rect = Rect2( 80, 32, 16, 16 )
+
+[node name="retro_house22" type="Sprite" parent="." index="22"]
+
+position = Vector2( 96, 32 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 22
+region_enabled = true
+region_rect = Rect2( 96, 32, 16, 16 )
+
+[node name="dark_wood_panel" type="Sprite" parent="." index="23"]
+
+position = Vector2( 112, 32 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 23
+region_enabled = true
+region_rect = Rect2( 112, 32, 16, 16 )
+
+[node name="human_king_portrait" type="Sprite" parent="." index="24"]
+
+position = Vector2( 0, 48 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 24
+region_enabled = true
+region_rect = Rect2( 0, 48, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="human_king_portrait" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="human_king_portrait/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="gus_king_portrait" type="Sprite" parent="." index="25"]
+
+position = Vector2( 16, 48 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 25
+region_enabled = true
+region_rect = Rect2( 16, 48, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="gus_king_portrait" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="gus_king_portrait/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="retro_house26" type="Sprite" parent="." index="26"]
+
+position = Vector2( 32, 48 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 26
+region_enabled = true
+region_rect = Rect2( 32, 48, 16, 16 )
+
+[node name="pot" type="Sprite" parent="." index="27"]
+
+position = Vector2( 48, 48 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 27
+region_enabled = true
+region_rect = Rect2( 48, 48, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="pot" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="pot/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="pot_broken" type="Sprite" parent="." index="28"]
+
+position = Vector2( 64, 48 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 28
+region_enabled = true
+region_rect = Rect2( 64, 48, 16, 16 )
+
+[node name="note" type="Sprite" parent="." index="29"]
+
+position = Vector2( 80, 48 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 29
+region_enabled = true
+region_rect = Rect2( 80, 48, 16, 16 )
+
+[node name="retro_house30" type="Sprite" parent="." index="30"]
+
+position = Vector2( 96, 48 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 30
+region_enabled = true
+region_rect = Rect2( 96, 48, 16, 16 )
+
+[node name="well" type="Sprite" parent="." index="31"]
+
+position = Vector2( 112, 48 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 31
+region_enabled = true
+region_rect = Rect2( 112, 48, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="well" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="well/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="carpet_stair" type="Sprite" parent="." index="32"]
+
+position = Vector2( 0, 64 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 32
+region_enabled = true
+region_rect = Rect2( 0, 64, 16, 16 )
+
+[node name="retro_house33" type="Sprite" parent="." index="33"]
+
+position = Vector2( 16, 64 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 33
+region_enabled = true
+region_rect = Rect2( 16, 64, 16, 16 )
+
+[node name="retro_house34" type="Sprite" parent="." index="34"]
+
+position = Vector2( 32, 64 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 34
+region_enabled = true
+region_rect = Rect2( 32, 64, 16, 16 )
+
+[node name="chest_open" type="Sprite" parent="." index="35"]
+
+position = Vector2( 48, 64 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 35
+region_enabled = true
+region_rect = Rect2( 48, 64, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="chest_open" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="chest_open/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="chest_closed" type="Sprite" parent="." index="36"]
+
+position = Vector2( 64, 64 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 36
+region_enabled = true
+region_rect = Rect2( 64, 64, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="chest_closed" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="chest_closed/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="retro_house37" type="Sprite" parent="." index="37"]
+
+position = Vector2( 80, 64 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 37
+region_enabled = true
+region_rect = Rect2( 80, 64, 16, 16 )
+
+[node name="retro_house38" type="Sprite" parent="." index="38"]
+
+position = Vector2( 96, 64 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 38
+region_enabled = true
+region_rect = Rect2( 96, 64, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="retro_house38" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="retro_house38/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="retro_house39" type="Sprite" parent="." index="39"]
+
+position = Vector2( 112, 64 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 39
+region_enabled = true
+region_rect = Rect2( 112, 64, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="retro_house39" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="retro_house39/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="retro_house40" type="Sprite" parent="." index="40"]
+
+position = Vector2( 0, 80 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 40
+region_enabled = true
+region_rect = Rect2( 0, 80, 16, 16 )
+
+[node name="retro_house41" type="Sprite" parent="." index="41"]
+
+position = Vector2( 16, 80 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 41
+region_enabled = true
+region_rect = Rect2( 16, 80, 16, 16 )
+
+[node name="retro_house42" type="Sprite" parent="." index="42"]
+
+position = Vector2( 32, 80 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 42
+region_enabled = true
+region_rect = Rect2( 32, 80, 16, 16 )
+
+[node name="retro_house43" type="Sprite" parent="." index="43"]
+
+position = Vector2( 48, 80 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 43
+region_enabled = true
+region_rect = Rect2( 48, 80, 16, 16 )
+
+[node name="retro_house44" type="Sprite" parent="." index="44"]
+
+position = Vector2( 64, 80 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 44
+region_enabled = true
+region_rect = Rect2( 64, 80, 16, 16 )
+
+[node name="bed_top" type="Sprite" parent="." index="45"]
+
+position = Vector2( 80, 80 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 45
+region_enabled = true
+region_rect = Rect2( 80, 80, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="bed_top" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="bed_top/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="retro_house46" type="Sprite" parent="." index="46"]
+
+position = Vector2( 96, 80 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 46
+region_enabled = true
+region_rect = Rect2( 96, 80, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="retro_house46" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="retro_house46/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="retro_house47" type="Sprite" parent="." index="47"]
+
+position = Vector2( 112, 80 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 47
+region_enabled = true
+region_rect = Rect2( 112, 80, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="retro_house47" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="retro_house47/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="door_closed" type="Sprite" parent="." index="48"]
+
+position = Vector2( 0, 96 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 48
+region_enabled = true
+region_rect = Rect2( 0, 96, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="door_closed" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="door_closed/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="retro_house49" type="Sprite" parent="." index="49"]
+
+position = Vector2( 16, 96 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 49
+region_enabled = true
+region_rect = Rect2( 16, 96, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="retro_house49" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="retro_house49/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="door_open" type="Sprite" parent="." index="50"]
+
+position = Vector2( 32, 96 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 50
+region_enabled = true
+region_rect = Rect2( 32, 96, 16, 16 )
+
+[node name="retro_house51" type="Sprite" parent="." index="51"]
+
+position = Vector2( 48, 96 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 51
+region_enabled = true
+region_rect = Rect2( 48, 96, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="retro_house51" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="retro_house51/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="retro_house52" type="Sprite" parent="." index="52"]
+
+position = Vector2( 64, 96 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 52
+region_enabled = true
+region_rect = Rect2( 64, 96, 16, 16 )
+
+[node name="bed_bottom" type="Sprite" parent="." index="53"]
+
+position = Vector2( 80, 96 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 53
+region_enabled = true
+region_rect = Rect2( 80, 96, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="bed_bottom" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="bed_bottom/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="small_table" type="Sprite" parent="." index="54"]
+
+position = Vector2( 96, 95.8063 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 54
+region_enabled = true
+region_rect = Rect2( 96, 96, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="small_table" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="small_table/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="dresser" type="Sprite" parent="." index="55"]
+
+position = Vector2( 112, 96 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 55
+region_enabled = true
+region_rect = Rect2( 112, 96, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="dresser" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="dresser/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="stairs_up" type="Sprite" parent="." index="56"]
+
+position = Vector2( 0, 112 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 56
+region_enabled = true
+region_rect = Rect2( 0, 112, 16, 16 )
+
+[node name="stairs_down" type="Sprite" parent="." index="57"]
+
+position = Vector2( 16, 112 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 57
+region_enabled = true
+region_rect = Rect2( 16, 112, 16, 16 )
+
+[node name="retro_house58" type="Sprite" parent="." index="58"]
+
+position = Vector2( 32, 112 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 58
+region_enabled = true
+region_rect = Rect2( 32, 112, 16, 16 )
+
+[node name="retro_house59" type="Sprite" parent="." index="59"]
+
+position = Vector2( 48, 112 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 59
+region_enabled = true
+region_rect = Rect2( 48, 112, 16, 16 )
+
+[node name="retro_house60" type="Sprite" parent="." index="60"]
+
+position = Vector2( 64, 112 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 60
+region_enabled = true
+region_rect = Rect2( 64, 112, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="retro_house60" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="retro_house60/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="retro_house61" type="Sprite" parent="." index="61"]
+
+position = Vector2( 80, 112 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 61
+region_enabled = true
+region_rect = Rect2( 80, 112, 16, 16 )
+
+[node name="retro_house62" type="Sprite" parent="." index="62"]
+
+position = Vector2( 96, 112 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 62
+region_enabled = true
+region_rect = Rect2( 96, 112, 16, 16 )
+
+[node name="retro_house63" type="Sprite" parent="." index="63"]
+
+position = Vector2( 112, 112 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 63
+region_enabled = true
+region_rect = Rect2( 112, 112, 16, 16 )
+
+[node name="retro_house64" type="Sprite" parent="." index="64"]
+
+position = Vector2( 0, 128 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 64
+region_enabled = true
+region_rect = Rect2( 0, 128, 16, 16 )
+
+[node name="retro_house65" type="Sprite" parent="." index="65"]
+
+position = Vector2( 16, 128 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 65
+region_enabled = true
+region_rect = Rect2( 16, 128, 16, 16 )
+
+[node name="retro_house66" type="Sprite" parent="." index="66"]
+
+position = Vector2( 32, 128 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 66
+region_enabled = true
+region_rect = Rect2( 32, 128, 16, 16 )
+
+[node name="retro_house67" type="Sprite" parent="." index="67"]
+
+position = Vector2( 48, 128 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 67
+region_enabled = true
+region_rect = Rect2( 48, 128, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="retro_house67" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="retro_house67/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="retro_house68" type="Sprite" parent="." index="68"]
+
+position = Vector2( 64, 128 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 68
+region_enabled = true
+region_rect = Rect2( 64, 128, 16, 16 )
+
+[node name="retro_house69" type="Sprite" parent="." index="69"]
+
+position = Vector2( 80, 128 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 69
+region_enabled = true
+region_rect = Rect2( 80, 128, 16, 16 )
+
+[node name="retro_house70" type="Sprite" parent="." index="70"]
+
+position = Vector2( 96, 128 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 70
+region_enabled = true
+region_rect = Rect2( 96, 128, 16, 16 )
+
+[node name="retro_house71" type="Sprite" parent="." index="71"]
+
+position = Vector2( 112, 128 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 71
+region_enabled = true
+region_rect = Rect2( 112, 128, 16, 16 )
+
+[node name="retro_house72" type="Sprite" parent="." index="72"]
+
+position = Vector2( 0, 144 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 72
+region_enabled = true
+region_rect = Rect2( 0, 144, 16, 16 )
+
+[node name="retro_house73" type="Sprite" parent="." index="73"]
+
+position = Vector2( 16, 144 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 73
+region_enabled = true
+region_rect = Rect2( 16, 144, 16, 16 )
+
+[node name="retro_house74" type="Sprite" parent="." index="74"]
+
+position = Vector2( 32, 144 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 74
+region_enabled = true
+region_rect = Rect2( 32, 144, 16, 16 )
+
+[node name="retro_house75" type="Sprite" parent="." index="75"]
+
+position = Vector2( 48, 144 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 75
+region_enabled = true
+region_rect = Rect2( 48, 144, 16, 16 )
+
+[node name="retro_house76" type="Sprite" parent="." index="76"]
+
+position = Vector2( 63.7622, 144 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 76
+region_enabled = true
+region_rect = Rect2( 64, 144, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="retro_house76" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="retro_house76/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="retro_house77" type="Sprite" parent="." index="77"]
+
+position = Vector2( 80, 144 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 77
+region_enabled = true
+region_rect = Rect2( 80, 144, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="retro_house77" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="retro_house77/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="retro_house78" type="Sprite" parent="." index="78"]
+
+position = Vector2( 96, 144 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 78
+region_enabled = true
+region_rect = Rect2( 96, 144, 16, 16 )
+
+[node name="retro_house79" type="Sprite" parent="." index="79"]
+
+position = Vector2( 112, 144 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 79
+region_enabled = true
+region_rect = Rect2( 112, 144, 16, 16 )
+
+[node name="retro_house80" type="Sprite" parent="." index="80"]
+
+position = Vector2( 0, 160 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 80
+region_enabled = true
+region_rect = Rect2( 0, 160, 16, 16 )
+
+[node name="retro_house81" type="Sprite" parent="." index="81"]
+
+position = Vector2( 16, 160 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 81
+region_enabled = true
+region_rect = Rect2( 16, 160, 16, 16 )
+
+[node name="retro_house82" type="Sprite" parent="." index="82"]
+
+position = Vector2( 32, 160 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 82
+region_enabled = true
+region_rect = Rect2( 32, 160, 16, 16 )
+
+[node name="chair_right" type="Sprite" parent="." index="83"]
+
+position = Vector2( 48, 160 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 83
+region_enabled = true
+region_rect = Rect2( 48, 160, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="chair_right" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="chair_right/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="chair_left" type="Sprite" parent="." index="84"]
+
+position = Vector2( 64, 160 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 84
+region_enabled = true
+region_rect = Rect2( 64, 160, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="chair_left" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="chair_left/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="chair_down" type="Sprite" parent="." index="85"]
+
+position = Vector2( 80, 160 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 85
+region_enabled = true
+region_rect = Rect2( 80, 160, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="chair_down" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="chair_down/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="retro_house86" type="Sprite" parent="." index="86"]
+
+position = Vector2( 96, 160 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 86
+region_enabled = true
+region_rect = Rect2( 96, 160, 16, 16 )
+
+[node name="retro_house87" type="Sprite" parent="." index="87"]
+
+position = Vector2( 112, 160 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 87
+region_enabled = true
+region_rect = Rect2( 112, 160, 16, 16 )
+
+[node name="retro_house88" type="Sprite" parent="." index="88"]
+
+position = Vector2( 0, 176 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 88
+region_enabled = true
+region_rect = Rect2( 0, 176, 16, 16 )
+
+[node name="retro_house89" type="Sprite" parent="." index="89"]
+
+position = Vector2( 16, 176 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 89
+region_enabled = true
+region_rect = Rect2( 16, 176, 16, 16 )
+
+[node name="retro_house90" type="Sprite" parent="." index="90"]
+
+position = Vector2( 32, 176 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 90
+region_enabled = true
+region_rect = Rect2( 32, 176, 16, 16 )
+
+[node name="retro_house91" type="Sprite" parent="." index="91"]
+
+position = Vector2( 48, 176 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 91
+region_enabled = true
+region_rect = Rect2( 48, 176, 16, 16 )
+
+[node name="retro_house92" type="Sprite" parent="." index="92"]
+
+position = Vector2( 64, 176 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 92
+region_enabled = true
+region_rect = Rect2( 64, 176, 16, 16 )
+
+[node name="retro_house93" type="Sprite" parent="." index="93"]
+
+position = Vector2( 80, 176 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 93
+region_enabled = true
+region_rect = Rect2( 80, 176, 16, 16 )
+
+[node name="retro_house94" type="Sprite" parent="." index="94"]
+
+position = Vector2( 96, 176 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 94
+region_enabled = true
+region_rect = Rect2( 96, 176, 16, 16 )
+
+[node name="retro_house95" type="Sprite" parent="." index="95"]
+
+position = Vector2( 112, 176 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 95
+region_enabled = true
+region_rect = Rect2( 112, 176, 16, 16 )
+
+[node name="clock" type="Sprite" parent="." index="96"]
+
+position = Vector2( 0, 192 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 96
+region_enabled = true
+region_rect = Rect2( 0, 192, 16, 16 )
+
+[node name="retro_house97" type="Sprite" parent="." index="97"]
+
+position = Vector2( 16, 192 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 97
+region_enabled = true
+region_rect = Rect2( 16, 192, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="retro_house97" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="retro_house97/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="retro_house98" type="Sprite" parent="." index="98"]
+
+position = Vector2( 32, 192 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 98
+region_enabled = true
+region_rect = Rect2( 32, 192, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="retro_house98" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="retro_house98/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="retro_house99" type="Sprite" parent="." index="99"]
+
+position = Vector2( 48, 192 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 99
+region_enabled = true
+region_rect = Rect2( 48, 192, 16, 16 )
+
+[node name="retro_house100" type="Sprite" parent="." index="100"]
+
+position = Vector2( 64, 192 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 100
+region_enabled = true
+region_rect = Rect2( 64, 192, 16, 16 )
+
+[node name="retro_house101" type="Sprite" parent="." index="101"]
+
+position = Vector2( 80, 192 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 101
+region_enabled = true
+region_rect = Rect2( 80, 192, 16, 16 )
+
+[node name="retro_house102" type="Sprite" parent="." index="102"]
+
+position = Vector2( 96, 192 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 102
+region_enabled = true
+region_rect = Rect2( 96, 192, 16, 16 )
+
+[node name="retro_house103" type="Sprite" parent="." index="103"]
+
+position = Vector2( 112, 192 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 103
+region_enabled = true
+region_rect = Rect2( 112, 192, 16, 16 )
+
+[node name="bookcase1" type="Sprite" parent="." index="104"]
+
+position = Vector2( 0, 208 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 104
+region_enabled = true
+region_rect = Rect2( 0, 208, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="bookcase1" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="bookcase1/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="bookcase2" type="Sprite" parent="." index="105"]
+
+position = Vector2( 16, 208 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 105
+region_enabled = true
+region_rect = Rect2( 16, 208, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="bookcase2" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="bookcase2/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="retro_house106" type="Sprite" parent="." index="106"]
+
+position = Vector2( 32, 208 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 106
+region_enabled = true
+region_rect = Rect2( 32, 208, 16, 16 )
+
+[node name="retro_house107" type="Sprite" parent="." index="107"]
+
+position = Vector2( 48, 208 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 107
+region_enabled = true
+region_rect = Rect2( 48, 208, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="retro_house107" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="retro_house107/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="retro_house108" type="Sprite" parent="." index="108"]
+
+position = Vector2( 64, 208 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 108
+region_enabled = true
+region_rect = Rect2( 64, 208, 16, 16 )
+
+[node name="retro_house109" type="Sprite" parent="." index="109"]
+
+position = Vector2( 80, 208 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 109
+region_enabled = true
+region_rect = Rect2( 80, 208, 16, 16 )
+
+[node name="retro_house110" type="Sprite" parent="." index="110"]
+
+position = Vector2( 96, 208 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 110
+region_enabled = true
+region_rect = Rect2( 96, 208, 16, 16 )
+
+[node name="retro_house111" type="Sprite" parent="." index="111"]
+
+position = Vector2( 112, 208 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 111
+region_enabled = true
+region_rect = Rect2( 112, 208, 16, 16 )
+
+[node name="retro_house112" type="Sprite" parent="." index="112"]
+
+position = Vector2( 0, 224 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 112
+region_enabled = true
+region_rect = Rect2( 0, 224, 16, 16 )
+
+[node name="retro_house113" type="Sprite" parent="." index="113"]
+
+position = Vector2( 16, 224 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 113
+region_enabled = true
+region_rect = Rect2( 16, 224, 16, 16 )
+
+[node name="retro_house114" type="Sprite" parent="." index="114"]
+
+position = Vector2( 32, 224 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 114
+region_enabled = true
+region_rect = Rect2( 32, 224, 16, 16 )
+
+[node name="retro_house115" type="Sprite" parent="." index="115"]
+
+position = Vector2( 48, 224 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 115
+region_enabled = true
+region_rect = Rect2( 48, 224, 16, 16 )
+
+[node name="retro_house116" type="Sprite" parent="." index="116"]
+
+position = Vector2( 64, 224 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 116
+region_enabled = true
+region_rect = Rect2( 64, 224, 16, 16 )
+
+[node name="retro_house117" type="Sprite" parent="." index="117"]
+
+position = Vector2( 80, 224 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 117
+region_enabled = true
+region_rect = Rect2( 80, 224, 16, 16 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="retro_house117" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="retro_house117/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
+
+[node name="retro_house118" type="Sprite" parent="." index="118"]
+
+position = Vector2( 96, 224 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 118
+region_enabled = true
+region_rect = Rect2( 96, 224, 16, 16 )
+
+[node name="retro_house119" type="Sprite" parent="." index="119"]
+
+position = Vector2( 112, 224 )
+texture = ExtResource( 1 )
+vframes = 15
+hframes = 8
+frame = 119
+region_enabled = true
+region_rect = Rect2( 112, 224, 16, 16 )
+
+
