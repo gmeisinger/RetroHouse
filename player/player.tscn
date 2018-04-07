@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://player/player.gd" type="Script" id=1]
+[ext_resource path="res://player/meSheet.png" type="Texture" id=2]
+
+[node name="player" type="Node2D"]
+
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite" type="Sprite" parent="." index="0"]
+
+scale = Vector2( 2, 2 )
+texture = ExtResource( 2 )
+centered = false
+hframes = 4
+_sections_unfolded = [ "Animation", "Offset", "Region", "Transform", "Visibility" ]
+
+

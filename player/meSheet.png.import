@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/retro_house.png-d6fce39aea61cdc6a3777d0f9423250e.stex"
+path="res://.import/meSheet.png-c871676d6c1017eaf31291b7211df695.stex"
 
 [deps]
 
-source_file="res://map/tilesets/retro_house.png"
-source_md5="718b186819d314d963a9965e7a59e5d3"
+source_file="res://player/meSheet.png"
+source_md5="1ae080741dae589c1323d198a2eceaa6"
 
-dest_files=[ "res://.import/retro_house.png-d6fce39aea61cdc6a3777d0f9423250e.stex" ]
-dest_md5="6a5c02aa5a9c86a8b3ddd2b71aa91e28"
+dest_files=[ "res://.import/meSheet.png-c871676d6c1017eaf31291b7211df695.stex" ]
+dest_md5="8241429af59423f3958ab46cf770bfbb"
 
 [params]
 

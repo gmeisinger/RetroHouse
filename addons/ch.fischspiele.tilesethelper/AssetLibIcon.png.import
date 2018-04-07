@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/retro_house.png-d6fce39aea61cdc6a3777d0f9423250e.stex"
+path="res://.import/AssetLibIcon.png-c237f6570127423a87f230a8a531f019.stex"
 
 [deps]
 
-source_file="res://map/tilesets/retro_house.png"
-source_md5="718b186819d314d963a9965e7a59e5d3"
+source_file="res://addons/ch.fischspiele.tilesethelper/AssetLibIcon.png"
+source_md5="3c602af9d3f3bc42aa7a5692c7149d7c"
 
-dest_files=[ "res://.import/retro_house.png-d6fce39aea61cdc6a3777d0f9423250e.stex" ]
-dest_md5="6a5c02aa5a9c86a8b3ddd2b71aa91e28"
+dest_files=[ "res://.import/AssetLibIcon.png-c237f6570127423a87f230a8a531f019.stex" ]
+dest_md5="9916028951c1b66feafff4031036af33"
 
 [params]
 
@@ -28,5 +28,5 @@ process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

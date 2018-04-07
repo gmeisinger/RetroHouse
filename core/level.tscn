@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://map/tilesets/retro-house.tres" type="TileSet" id=1]
+[ext_resource path="res://player/player.tscn" type="PackedScene" id=2]
 
 [node name="Node2D" type="Node2D" index="0"]
 
@@ -46,4 +47,9 @@ occluder_light_mask = 1
 format = 1
 tile_data = PoolIntArray( 2, 45, 0, 4, 96, 0, 10, 63, 0, 11, 104, 0, 12, 105, 0, 13, 104, 0, 14, 63, 0, 65537, 55, 0, 262157, 85, 0, 327693, 54, 0, 327694, 84, 0, 589837, 48, 0 )
 
+[node name="player" parent="." index="2" instance=ExtResource( 2 )]
 
+position = Vector2( 192, 64 )
+
+
+[editable path="player"]

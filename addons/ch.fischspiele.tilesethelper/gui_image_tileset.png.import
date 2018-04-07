@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/retro_house.png-d6fce39aea61cdc6a3777d0f9423250e.stex"
+path="res://.import/gui_image_tileset.png-6a45426fdbd703a2a66693d6203df7be.stex"
 
 [deps]
 
-source_file="res://map/tilesets/retro_house.png"
-source_md5="718b186819d314d963a9965e7a59e5d3"
+source_file="res://addons/ch.fischspiele.tilesethelper/gui_image_tileset.png"
+source_md5="3f29a47130380d0a2a3a47ca7fd0411e"
 
-dest_files=[ "res://.import/retro_house.png-d6fce39aea61cdc6a3777d0f9423250e.stex" ]
-dest_md5="6a5c02aa5a9c86a8b3ddd2b71aa91e28"
+dest_files=[ "res://.import/gui_image_tileset.png-6a45426fdbd703a2a66693d6203df7be.stex" ]
+dest_md5="e21c20d52f0ad6a8b92a3be72c7cb4e5"
 
 [params]
 
